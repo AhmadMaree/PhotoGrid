@@ -11,7 +11,7 @@ public interface PhotoServices {
 
     //https://api.thecatapi.com/v1/images/search
     //https://api.thecatapi.com/v1/images/search?breed_ids=beng
-    @GET("/v1/images/search")
+    @GET("/v1/images/search/")
     Call<List<PhotoCat>> get(@Header("x-api-key") String tok);
 
 

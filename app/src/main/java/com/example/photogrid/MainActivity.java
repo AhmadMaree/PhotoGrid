@@ -212,7 +212,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
     public void loadimage(String ur){
-        Picasso.with(this).load(url).into(imageView);
+
+
+        if (image_id == 1)
+            Picasso.with(this).load(url).into(imageView);
+        else if (image_id == 2)
+            Picasso.with(this).load(url).into(imageView1);
+        else if (image_id == 3)
+            Picasso.with(this).load(url).into(imageView2);
+        else if (image_id == 4)
+            Picasso.with(this).load(url).into(imageView3);
+        else if (image_id == 5)
+            Picasso.with(this).load(url).into(imageView4);
+        else if (image_id == 6)
+            Picasso.with(this).load(url).into(imageView5);
+        else if (image_id == 7)
+            Picasso.with(this).load(url).into(imageView6);
+        else if (image_id == 8)
+            Picasso.with(this).load(url).into(imageView7);
+        else if (image_id == 9)
+            Picasso.with(this).load(url).into(imageView8);
     }
 
     @Override
